@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
+import { FaPlusCircle } from 'react-icons/fa';
 
 const InputTodo = (props) => {
   const [inputText, setInputText] = useState({
@@ -34,7 +35,7 @@ const InputTodo = (props) => {
         required
       />
       <button className="input-submit clickable" type="submit">
-        Submit
+        <FaPlusCircle />
       </button>
     </form>
   );
