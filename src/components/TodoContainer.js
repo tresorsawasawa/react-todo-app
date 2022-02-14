@@ -68,9 +68,9 @@ class TodoContainer extends React.Component {
 
   render() {
     return (
-      <>
-        <Header />
-        <React.StrictMode>
+      <div className="container flex-center-culomn">
+        <div className="inner">
+          <Header />
           <InputTodo addTodoProps={this.addTodoItem} />
           <div>
             <TodosList
@@ -79,8 +79,8 @@ class TodoContainer extends React.Component {
               deleteTodoProps={this.deleteTodo}
             />
           </div>
-        </React.StrictMode>
-      </>
+        </div>
+      </div>
     );
   }
 }

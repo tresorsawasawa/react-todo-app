@@ -15,6 +15,7 @@ class TodoItem extends Component {
         {this.props.todo.title}
         <button
           type="button"
+          className="clickable"
           onClick={() => this.props.deleteTodoProps(this.props.todo.id)}
         >
           Delete
