@@ -46,7 +46,22 @@ class TodoItem extends Component {
 
     return (
       <li className={styles.item}>
-        <div onDoubleClick={this.handleEditing}>...</div>
+        <div onDoubleClick={this.handleEditing} style={viewMode}>
+          <input
+            type="checkbox"
+            className={styles.checkbox}
+            checked={completed}
+            onChange={() => this.props.handleChangeProps(id)}
+          />
+          <span style={this.props.todo.completed ? completedStyle : null}>{title}</span>
+          <button
+            type="button"
+            className={styles.deleteBtn}
+            onClick={() => this.props.deleteTodoProps(id)}
+          >
+            Delete
+          </button>
+        </div>
         <input
           type="text"
           style={editMode}
@@ -57,20 +72,6 @@ class TodoItem extends Component {
           }}
           onKeyDown={this.handleUpdatedDone}
         />
-        <input
-          type="checkbox"
-          className={styles.checkbox}
-          checked={completed}
-          onChange={() => this.props.handleChangeProps(id)}
-        />
-        <span style={this.props.todo.completed ? completedStyle : null}>{title}</span>
-        <button
-          type="button"
-          className={styles.deleteBtn}
-          onClick={() => this.props.deleteTodoProps(id)}
-        >
-          Delete
-        </button>
       </li>
     );
   }
