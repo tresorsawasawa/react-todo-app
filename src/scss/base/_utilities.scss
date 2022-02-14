@@ -16,3 +16,12 @@ body {
   line-height: 1.4;
   height: 100vh;
 }
+
+.flex-center-culomn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.clickable { cursor: pointer; }
