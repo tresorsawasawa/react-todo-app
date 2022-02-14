@@ -1,3 +1,4 @@
+import { FaTrash } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import styles from './scss/TodoItem.module.scss';
@@ -54,7 +55,7 @@ const TodoItem = (props) => {
           className={styles.deleteBtn}
           onClick={() => deleteTodoProps(id)}
         >
-          Delete
+          <FaTrash />
         </button>
       </div>
       <input
