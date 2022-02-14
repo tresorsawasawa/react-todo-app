@@ -1,18 +1,25 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 const InputTodo = (props) => {
-  const [title, setTitle] = useState('');
+  const [inputText, setInputText] = useState({
+    title: '',
+  });
 
   const onChange = (e) => {
-    setTitle(e.target.value);
+    setInputText({
+      ...inputText,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.addTodoProps(title);
-    setTitle('');
+    const { addTodoProps } = props;
+    addTodoProps(inputText.title);
+    setInputText({
+      title: '',
+    });
   };
 
   return (
@@ -22,7 +29,7 @@ const InputTodo = (props) => {
         className="input-text"
         placeholder="Add Todo..."
         name="title"
-        value={title}
+        value={inputText.title}
         onChange={onChange}
         required
       />
@@ -31,6 +38,14 @@ const InputTodo = (props) => {
       </button>
     </form>
   );
+};
+
+InputTodo.propTypes = {
+  addTodoProps: PropTypes.func,
+};
+
+InputTodo.defaultProps = {
+  addTodoProps: null,
 };
 
 export default InputTodo;
