@@ -13,7 +13,6 @@ class TodoItem extends Component {
   }
 
   handleEditing = () => {
-    console.log('Edit activated');
     this.setState({
       editing: true,
     });

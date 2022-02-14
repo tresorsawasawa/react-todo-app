@@ -1,48 +1,36 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class InputTodo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: '',
-    };
-  }
+const InputTodo = (props) => {
+  const [title, setTitle] = useState('');
 
-  onChange = (e) => {
-    this.setState({
-      [e.target.name]: e.target.value,
-    });
+  const onChange = (e) => {
+    setTitle(e.target.value);
   };
 
-  handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    this.props.addTodoProps(this.state.title);
-    this.setState({
-      title: '',
-    });
+    props.addTodoProps(title);
+    setTitle('');
   };
 
-  render() {
-    return (
-      <form className="form-container" onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          className="input-text"
-          placeholder="Add Todo..."
-          name="title"
-          value={this.state.title}
-          onChange={this.onChange}
-          required
-        />
-        <button className="input-submit clickable" type="submit">
-          Submit
-        </button>
-      </form>
-    );
-  }
-}
+  return (
+    <form className="form-container" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        className="input-text"
+        placeholder="Add Todo..."
+        name="title"
+        value={title}
+        onChange={onChange}
+        required
+      />
+      <button className="input-submit clickable" type="submit">
+        Submit
+      </button>
+    </form>
+  );
+};
 
 export default InputTodo;
