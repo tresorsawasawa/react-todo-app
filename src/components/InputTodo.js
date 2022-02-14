@@ -34,6 +34,7 @@ class InputTodo extends Component {
           name="title"
           value={this.state.title}
           onChange={this.onChange}
+          required
         />
         <button type="submit">
           Submit
