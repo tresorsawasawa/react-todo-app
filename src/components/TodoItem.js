@@ -65,6 +65,7 @@ class TodoItem extends Component {
         <input
           type="text"
           style={editMode}
+          placeholder="Edit A To-do..."
           className={styles.textInput}
           value={title}
           onChange={(e) => {
