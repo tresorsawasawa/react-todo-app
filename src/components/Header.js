@@ -7,7 +7,7 @@ const Header = () => {
   };
 
   const pageTitle = {
-    fontSize: '4rem',
+    fontSize: '6rem',
     fontWeight: '600',
     marginBottom: '2rem',
     lineHeight: '1em',

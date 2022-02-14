@@ -1,0 +1,19 @@
+.item {
+  font-size: 1.2rem;
+  list-style-type: none;
+  padding: 17px 0;
+  border-bottom: 1px solid #eaeaea;
+
+  & .deleteBtn {
+    background: transparent;
+    border: none;
+    float: right;
+    cursor: pointer;
+    font-size: 1.03rem;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    color: #e12921;
+    margin: -10px 0 0 10px;
+  }
+}

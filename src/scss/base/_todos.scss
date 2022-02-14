@@ -4,11 +4,11 @@
 
   & .inner {
     width: 100%;
-    padding: 6rem 10px 4rem;
-    border: solid #fff;
+    padding: 2rem 10px 4rem;
 
     & .form-container {
       width: 100%;
+      background-color: $primary-bg-color;
       margin-bottom: 20px;
       display: flex;
       border-radius: calc(0.5 * 100px);
