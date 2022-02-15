@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './scss/App.scss';
+import './assets/scss/App.scss';
 // component file
 import TodoContainer from './components/TodoContainer';
 
