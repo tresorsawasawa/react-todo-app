@@ -4,7 +4,10 @@
 
   & .inner {
     width: 100%;
-    padding: 2rem 10px 4rem;
+    padding: 2rem 22px 4rem;
+    box-shadow:
+      inset -5px -5px 7px $text-color,
+      inset 3px 3px 7px $text-color;
 
     & .form-container {
       width: 100%;
