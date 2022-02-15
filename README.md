@@ -1,4 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Todo App
 
 ## Description
@@ -7,7 +8,7 @@ This project has been bootstrapped with [Create React App](https://github.com/fa
 
 ![App View](./src/assets/images/react-todo-app.png)
 
-> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. 
+> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
 
 ## Built With
 
@@ -18,12 +19,12 @@ This project has been bootstrapped with [Create React App](https://github.com/fa
 
 ## Get Started
 
-To get a local copy up and running follow  s these simple example steps.
+To get a local copy up and running follow s these simple example steps.
 
-1. Download the Zip file or clone the repo with ```git clone https://github.com/tresorsawasawa/Todo_List_App.git ```.
-2. ``` cd /Todo_List_App ```
-3. ``` npm install ``` To install all the dependencies.
-4.  ``` npm start ``` To open in your browser
+1. Download the Zip file or clone the repo with `git clone https://github.com/tresorsawasawa/Todo_List_App.git `.
+2. `cd /Todo_List_App`
+3. `npm install` To install all the dependencies.
+4. `npm start` To open in your browser
 
 ## Test
 
@@ -45,7 +46,6 @@ For tracking linter errors locally you need to follow these steps:
 
   > `npx eslint .`
 
-- Use `npm run build` to run the app in live server
 ## Live Demo
 
 See the [Live](https://tresorsawasawa.github.io/react-todo-app/)
@@ -57,6 +57,7 @@ See the [Live](https://tresorsawasawa.github.io/react-todo-app/)
 - GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
 - Twitter: [@tresorsawasawa](https://twitter.com/TresorSawasawa)
 - LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tr%C3%A9sor-sawasawa-43745320b/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
