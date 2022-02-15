@@ -1,0 +1,50 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+
+  & .inner {
+    width: 100%;
+    padding: 2rem 22px 4rem;
+    box-shadow:
+      inset -5px -5px 7px $text-color,
+      inset 3px 3px 7px $text-color;
+
+    & .form-container {
+      width: 100%;
+      background-color: $primary-bg-color;
+      margin-bottom: 20px;
+      display: flex;
+      border-radius: calc(0.5 * 100px);
+      box-shadow: 0 1px 6px 0 $form-box-shadow-color;
+      justify-content: space-evenly;
+
+      .input-text {
+        font-size: 1rem;
+        background-color: $primary-bg-color;
+        color: $text-color;
+        font-weight: 400;
+        width: 85%;
+        padding-right: 5px;
+        padding-left: 10px;
+        border-radius: calc(0.5 * 100px);
+
+        &::placeholder { color: $text-color; }
+      }
+
+      & .input-submit {
+        background: transparent;
+        font-size: 1.2rem;
+        color: $success-color;
+        text-transform: capitalize;
+        font-weight: 600;
+      }
+
+      & .input-text,
+      & .input-submit {
+        height: 45px;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+}
