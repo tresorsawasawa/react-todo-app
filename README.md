@@ -22,9 +22,10 @@ This project has been bootstrapped with [Create React App](https://github.com/fa
 To get a local copy up and running follow s these simple example steps.
 
 1. Download the Zip file or clone the repo with `git clone https://github.com/tresorsawasawa/Todo_List_App.git `.
-2. `cd /Todo_List_App`
+2. `cd Todo_List_App`
 3. `npm install` To install all the dependencies.
-4. `npm start` To open in your browser
+4. `npm start` 
+   The page will open at http://localhost:3000 in your browser.
 
 ## Test
 
@@ -56,7 +57,7 @@ See the [Live](https://tresorsawasawa.github.io/react-todo-app/)
 
 - GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
 - Twitter: [@tresorsawasawa](https://twitter.com/TresorSawasawa)
-- LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tr%C3%A9sor-sawasawa-43745320b/)
+- LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tresor-sawasawa/)
 
 ## 🤝 Contributing
 
