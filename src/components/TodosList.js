@@ -26,7 +26,7 @@ const TodosList = (props) => {
 };
 
 TodosList.propTypes = {
-  todos: PropTypes.arrayOf(PropTypes.any),
+  todos: PropTypes.instanceOf(Object),
   handleChangeProps: PropTypes.func,
   deleteTodoProps: PropTypes.func,
   setUpdate: PropTypes.func,
